@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import logo from './HT_logo.png';
-import './App.css';
+import '../../Main.css';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="logo" alt="logo" />
-        </header>
+          <Header />
+          <Footer />
       </div>
     );
   }
