@@ -1,9 +1,30 @@
 @import "../../consts.scss";
 
 .welcome-page-section {
+    height: 650px;
+    align-items: center;
     display: grid;
     grid-template-columns: 5% auto 5%;
+}
+
+.first-section {
     background-color: $firstWelcomeSectionBackgroundColor;
+}
+
+.second-section {
+    background-color: #ddddfa;
+
+    img {
+        width: 600px;
+    }
+}
+
+.third-section {
+    background-color: $white;
+}
+
+.fourth-section {
+    background-color: #F3F3F9;
 }
 
 .welcome-page-row {
@@ -13,9 +34,7 @@
     grid-template-columns: 45% 10% 45%;
     align-items: center;
 
-
     .details {
-        grid-column: 1;
         align-self: start;
 
         h4 {
@@ -33,24 +52,34 @@
             font-size: 20px;
             line-height: 1.5;
         }
-
-        .login-section {
-            background-color: $white;
-            height: 150px;
-            width: 150px;
-            border-radius: 10px;
-        }
     }
 
     .image-section {
-        grid-column: 3;
-
         img {
             height: 400px;
+            width: 100%;
         }
     }
 }
 
 
+.left {
+    .details {
+        grid-column: 1;
+    }
 
+    .image-section {
+        grid-column: 3;
+    }
+}
 
+.right {
+    .details {
+        grid-column: 3;
+    }
+
+    .image-section {
+        grid-column: 1;
+    }
+
+}

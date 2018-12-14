@@ -35,9 +35,24 @@
     grid-column: 2; }
 
 .welcome-page-section {
+  height: 650px;
+  align-items: center;
   display: grid;
-  grid-template-columns: 5% auto 5%;
+  grid-template-columns: 5% auto 5%; }
+
+.first-section {
   background-color: #F0F0F7; }
+
+.second-section {
+  background-color: #ddddfa; }
+  .second-section img {
+    width: 600px; }
+
+.third-section {
+  background-color: #fff; }
+
+.fourth-section {
+  background-color: #F3F3F9; }
 
 .welcome-page-row {
   height: 500px;
@@ -46,7 +61,6 @@
   grid-template-columns: 45% 10% 45%;
   align-items: center; }
   .welcome-page-row .details {
-    grid-column: 1;
     align-self: start; }
     .welcome-page-row .details h4 {
       color: #707070;
@@ -60,12 +74,18 @@
       font-family: "Roboto", sans-serif;
       font-size: 20px;
       line-height: 1.5; }
-    .welcome-page-row .details .login-section {
-      background-color: #fff;
-      height: 150px;
-      width: 150px;
-      border-radius: 10px; }
-  .welcome-page-row .image-section {
-    grid-column: 3; }
-    .welcome-page-row .image-section img {
-      height: 400px; }
+  .welcome-page-row .image-section img {
+    height: 400px;
+    width: 100%; }
+
+.left .details {
+  grid-column: 1; }
+
+.left .image-section {
+  grid-column: 3; }
+
+.right .details {
+  grid-column: 3; }
+
+.right .image-section {
+  grid-column: 1; }
